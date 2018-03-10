@@ -21,6 +21,7 @@ sudo apt-get install -y \
     curl \
     software-properties-common \
     zsh \
+    fonts-powerline
 
 # Setup ZSH and FZF and wire it into bash
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh || true
@@ -30,9 +31,9 @@ echo source ~/.bash_profile > ~/.bashrc
 
 # Fix pesky color issues with WSL
 echo "LS_COLORS=\"ow=01;36;40\" && export LS_COLORS
-> zstyle ':completion:*' list-colors \"\${(@s.:.)LS_COLORS}\"
-> autoload -Uz compinit
-> compinit" > ~/.zshrc
+zstyle ':completion:*' list-colors \"\${(@s.:.)LS_COLORS}\"
+autoload -Uz compinit
+compinit" >> ~/.zshrc
 
 # Grab SSH Keys from the host
 cp /mnt/c/Users/jesse/.ssh -R ~/
