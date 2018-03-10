@@ -1,4 +1,4 @@
-# A Complete Setup Script for Configuring WSL
+# A Complete Dev Environment Setup Script for Configuring WSL
 
 ## Why should you use this
 todo
@@ -15,6 +15,6 @@ In order to execute the downloaded file as a script, we have to modify it's perm
 
 `chmod +x ./wsl-setup.sh`
 
-Now just execute the script
+Now just execute the script and wait for the goodness to finish installing.
 
 `./wsl-setup.sh`
